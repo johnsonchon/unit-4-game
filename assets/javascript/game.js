@@ -26,6 +26,25 @@ $(document).ready(function () {
         currentScore += redNum;
         $(".ate").html(currentScore);
         $(".mario-word").html('"I can feel it! Gimme more!"');
+
+        if (currentScore > randomNum) {
+            lossCount++;
+            $(".losses").html(lossCount);
+            $(".mario-word").html('"I dont feel good...Call 911"');
+            $(".mario img").attr("src", "./assets/images/dead.png");
+            $(".top h1").html("Mario Overdosed!");
+            $("body").css("background-image", "url(../unit-4-game-master/assets/images/castle.png)");
+        }
+    
+        else if (currentScore === randomNum) {
+            winCount++;
+            $(".wins").html(winCount);
+            $(".mario-word").html('"This is great!!!"');
+            $(".mario img").attr("src", "./assets/images/mario-good.png");
+            $(".top h1").html("Mario is Shrooming!");
+            $("body").css("background-image", "url(../unit-4-game-master/assets/images/shroom.jpg)");
+    
+        }
     });
 
     $(".green").on("click", function () {
@@ -33,6 +52,25 @@ $(document).ready(function () {
         currentScore += greenNum;
         $(".ate").html(currentScore);
         $(".mario-word").html('"Oh yea! Im trippn"');
+
+        if (currentScore > randomNum) {
+            lossCount++;
+            $(".losses").html(lossCount);
+            $(".mario-word").html('"I dont feel good...Call 911"');
+            $(".mario img").attr("src", "./assets/images/dead.png");
+            $(".top h1").html("Mario Overdosed!");
+            $("body").css("background-image", "url(../unit-4-game-master/assets/images/castle.png)");
+        }
+    
+        else if (currentScore === randomNum) {
+            winCount++;
+            $(".wins").html(winCount);
+            $(".mario-word").html('"This is great!!!"');
+            $(".mario img").attr("src", "./assets/images/mario-good.png");
+            $(".top h1").html("Mario is Shrooming!");
+            $("body").css("background-image", "url(../unit-4-game-master/assets/images/shroom.jpg)");
+    
+        }
     });
 
     $(".purple").on("click", function () {
@@ -40,6 +78,25 @@ $(document).ready(function () {
         currentScore += purpleNum;
         $(".ate").html(currentScore);
         $(".mario-word").html('"I see the space time continuum..."');
+
+        if (currentScore > randomNum) {
+            lossCount++;
+            $(".losses").html(lossCount);
+            $(".mario-word").html('"I dont feel good...Call 911"');
+            $(".mario img").attr("src", "./assets/images/dead.png");
+            $(".top h1").html("Mario Overdosed!");
+            $("body").css("background-image", "url(../unit-4-game-master/assets/images/castle.png)");
+        }
+    
+        else if (currentScore === randomNum) {
+            winCount++;
+            $(".wins").html(winCount);
+            $(".mario-word").html('"This is great!!!"');
+            $(".mario img").attr("src", "./assets/images/mario-good.png");
+            $(".top h1").html("Mario is Shrooming!");
+            $("body").css("background-image", "url(../unit-4-game-master/assets/images/shroom.jpg)");
+    
+        }
     });
 
     $(".teal").on("click", function () {
@@ -47,30 +104,28 @@ $(document).ready(function () {
         currentScore += tealNum;
         $(".ate").html(currentScore);
         $(".mario-word").html('"Hands are weird, huh?"');
+
+        if (currentScore > randomNum) {
+            lossCount++;
+            $(".losses").html(lossCount);
+            $(".mario-word").html('"I dont feel good...Call 911"');
+            $(".mario img").attr("src", "./assets/images/dead.png");
+            $(".top h1").html("Mario Overdosed!");
+            $("body").css("background-image", "url(../unit-4-game-master/assets/images/castle.png)");
+        }
+    
+        else if (currentScore === randomNum) {
+            winCount++;
+            $(".wins").html(winCount);
+            $(".mario-word").html('"This is great!!!"');
+            $(".mario img").attr("src", "./assets/images/mario-good.png");
+            $(".top h1").html("Mario is Shrooming!");
+            $("body").css("background-image", "url(../unit-4-game-master/assets/images/shroom.jpg)");
+    
+        }
     });
 
-    // If and If Else Statements for score
     
-
-    if (randomNum < currentScore) {
-        lossCount++;
-        $(".losses").html(lossCount);
-        $(".mario-word").html('"I dont feel good...Call 911"');
-        $(".mario img").attr("src", "./assets/images/dead.png");
-        $(".top h1").html("Mario Overdosed!");
-        $("body").css("background-image", "url(../unit-4-game-master/assets/images/castle.png)");
-    }
-
-    else if (randomNum === currentScore) {
-        winCount++;
-        $(".wins").html(winCount);
-        $(".mario-word").html('"This is great!!!"');
-        $(".mario img").attr("src", "./assets/images/mario-good.png");
-        $(".top h1").html("Mario is Shrooming!");
-        $("body").css("background-image", "url(../unit-4-game-master/assets/images/shroom.jpg)");
-
-    }
-
 
 
 
