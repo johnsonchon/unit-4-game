@@ -18,6 +18,21 @@ $(document).ready(function () {
     var lossCount = 0;
     var currentScore = 0;
 
+    // Reset Function
+    function reset() {
+        randomNum = Math.floor((Math.random() * 120) + 19);
+        currentScore === 0;
+        redNum = Math.floor((Math.random() * 12) + 1);
+        greenNum = Math.floor((Math.random() * 12) + 1);
+        purpleNum = Math.floor((Math.random() * 12) + 1);
+        tealNum = Math.floor((Math.random() * 12) + 1);
+        $(".mario-word").html('"Feed me shrooms, bro!"');
+        $(".mario img").attr("src", "./assets/images/mario1.png");
+        $(".top h1").html("Shroom Collector!");
+        $("body").css("background-image", "url(../unit-4-game-master/assets/images/back.png)");
+    }
+
+
 
 
     // Button Click functions
@@ -34,6 +49,7 @@ $(document).ready(function () {
             $(".mario img").attr("src", "./assets/images/dead.png");
             $(".top h1").html("Mario Overdosed!");
             $("body").css("background-image", "url(../unit-4-game-master/assets/images/castle.png)");
+            
         }
 
         else if (currentScore === randomNum) {
@@ -126,7 +142,9 @@ $(document).ready(function () {
     });
 
 
-  
+
+
+
 
 
 
