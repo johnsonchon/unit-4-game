@@ -17,6 +17,7 @@ $(document).ready(function () {
     var winCount = 0;
     var lossCount = 0;
     var currentScore = 0;
+    
 
 
     // Button Click functions
@@ -24,42 +25,50 @@ $(document).ready(function () {
         // audioElement.play();
         currentScore += redNum;
         $(".ate").html(currentScore);
-        $(".mario-word").html("I can feel it! Gimme more!");
+        $(".mario-word").html('"I can feel it! Gimme more!"');
     });
 
     $(".green").on("click", function () {
         //audioElement.play();
         currentScore += greenNum;
         $(".ate").html(currentScore);
-        $(".mario-word").html("Oh yea! I'm trippn'!");
+        $(".mario-word").html('"Oh yea! Im trippn"');
     });
 
     $(".purple").on("click", function () {
         //audioElement.play();
         currentScore += purpleNum;
         $(".ate").html(currentScore);
-        $(".mario-word").html("I see the space time continuum...");
+        $(".mario-word").html('"I see the space time continuum..."');
     });
 
     $(".teal").on("click", function () {
         //audioElement.play();
         currentScore += tealNum;
         $(".ate").html(currentScore);
-        $(".mario-word").html("Hands are weird, huh?");
+        $(".mario-word").html('"Hands are weird, huh?"');
     });
 
     // If and If Else Statements for score
     
 
-    if (currentScore > randomNum) {
+    if (randomNum < currentScore) {
         lossCount++;
         $(".losses").html(lossCount);
-        $(".mario-word").html("I don't feel good...Call 911");
+        $(".mario-word").html('"I dont feel good...Call 911"');
+        $(".mario img").attr("src", "./assets/images/dead.png");
+        $(".top h1").html("Mario Overdosed!");
+        $("body").css("background-image", "url(../unit-4-game-master/assets/images/castle.png)");
     }
 
     else if (randomNum === currentScore) {
         winCount++;
         $(".wins").html(winCount);
+        $(".mario-word").html('"This is great!!!"');
+        $(".mario img").attr("src", "./assets/images/mario-good.png");
+        $(".top h1").html("Mario is Shrooming!");
+        $("body").css("background-image", "url(../unit-4-game-master/assets/images/shroom.jpg)");
+
     }
 
 
