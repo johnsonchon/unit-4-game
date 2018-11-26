@@ -1,0 +1,139 @@
+body {
+    background-image: url("../images/back.jpg");
+    background-size: cover;
+    height: auto;
+}
+
+.top {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.top h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.top p {
+    text-align: center;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 10px;
+}
+
+.mid {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 150px;
+}
+
+.mid p {
+    color: white;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+}
+
+.mid h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.shrooms {
+    height: 280px;
+}
+
+.shrooms img {
+    height: 50px;
+    display: block;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    width: 100%;
+    height: 63px;
+}
+
+.numbers {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    height: 280px;
+}
+
+.numbers h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.numbers p {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+
+.eaten {
+    padding-top: 50px;
+}
+
+.mush {
+    padding-top: 10px;
+}
+
+.bottom {
+    height: 100px;
+}
+
+.mario {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.mario img {
+    height: 200px;
+    display: block;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lower {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.lower h1 {
+    color: white;
+    text-align: center;
+}
+
+.lower p {
+    color: white;
+    text-align: center;
+}
+
+
+
