@@ -37,7 +37,7 @@ $(document).ready(function () {
 
     // Button Click functions
     $(".red").on("click", function () {
-        // audioElement.play();
+        audioElement.play();
         currentScore += redNum;
         $(".ate").html(currentScore);
         $(".mario-word").html('"I can feel it! Gimme more!"');
@@ -46,7 +46,7 @@ $(document).ready(function () {
             lossCount++;
             $(".losses").html(lossCount);
             $(".mario-word").html('"I dont feel good...Call 911"');
-            $(".mario img").attr("src", "./assets/images/dead.png");
+            $(".mario img").attr("src", "./assets/images/mario2.png");
             $(".top h1").html("Mario Overdosed!");
             $("body").css("background-image", "url(../unit-4-game-master/assets/images/castle.png)");
             
@@ -64,7 +64,7 @@ $(document).ready(function () {
     });
 
     $(".green").on("click", function () {
-        //audioElement.play();
+        audioElement.play();
         currentScore += greenNum;
         $(".ate").html(currentScore);
         $(".mario-word").html('"Oh yea! Im trippn"');
@@ -73,7 +73,7 @@ $(document).ready(function () {
             lossCount++;
             $(".losses").html(lossCount);
             $(".mario-word").html('"I dont feel good...Call 911"');
-            $(".mario img").attr("src", "./assets/images/dead.png");
+            $(".mario img").attr("src", "./assets/images/mario2.png");
             $(".top h1").html("Mario Overdosed!");
             $("body").css("background-image", "url(../unit-4-game-master/assets/images/castle.png)");
         }
@@ -90,7 +90,7 @@ $(document).ready(function () {
     });
 
     $(".purple").on("click", function () {
-        //audioElement.play();
+        audioElement.play();
         currentScore += purpleNum;
         $(".ate").html(currentScore);
         $(".mario-word").html('"I see the space time continuum..."');
@@ -99,7 +99,7 @@ $(document).ready(function () {
             lossCount++;
             $(".losses").html(lossCount);
             $(".mario-word").html('"I dont feel good...Call 911"');
-            $(".mario img").attr("src", "./assets/images/dead.png");
+            $(".mario img").attr("src", "./assets/images/mario2.png");
             $(".top h1").html("Mario Overdosed!");
             $("body").css("background-image", "url(../unit-4-game-master/assets/images/castle.png)");
         }
@@ -116,7 +116,7 @@ $(document).ready(function () {
     });
 
     $(".teal").on("click", function () {
-        //audioElement.play();
+        audioElement.play();
         currentScore += tealNum;
         $(".ate").html(currentScore);
         $(".mario-word").html('"Hands are weird, huh?"');
@@ -125,7 +125,7 @@ $(document).ready(function () {
             lossCount++;
             $(".losses").html(lossCount);
             $(".mario-word").html('"I dont feel good...Call 911"');
-            $(".mario img").attr("src", "./assets/images/dead.png");
+            $(".mario img").attr("src", "./assets/images/mario2.png");
             $(".top h1").html("Mario Overdosed!");
             $("body").css("background-image", "url(../unit-4-game-master/assets/images/castle.png)");
         }
