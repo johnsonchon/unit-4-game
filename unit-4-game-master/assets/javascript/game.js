@@ -57,7 +57,7 @@ $(document).ready(function () {
             $(".mario-word").html('"I dont feel good...Call 911"');
             $(".mario img").attr("src", "./assets/images/mario2.png");
             $(".top h1").html("Mario Overdosed!");
-            $("body").css("background-image", "url(./assets/images/castle.png)");
+            $("body").css("background-image", "url(../unit-4-game-master/assets/images/castle.png)");
 
             resetTwo ();
 
@@ -69,7 +69,7 @@ $(document).ready(function () {
             $(".mario-word").html('"This is great!!!"');
             $(".mario img").attr("src", "./assets/images/mario-good.png");
             $(".top h1").html("Mario is Shrooming!");
-            $("body").css("background-image", "url(./assets/images/shroom.jpg)");
+            $("body").css("background-image", "url(../unit-4-game-master/assets/images/shroom.jpg)");
 
             resetTwo ();
         }
